@@ -125,7 +125,7 @@ export default {
           ]
         });
 
-        var image = '../assets/location-icon.svg';
+        var image = 'https://raw.githubusercontent.com/thomascruz/studiographenetestexercise/master/src/assets/location-icon.svg?token=AAYGNRJNHLKD46M4W3DIEFS6QOMES';
         var beachMarker = new google.maps.Marker({
           position: {lat: 51.5124319, lng: -0.1290983},
           map: this.map,
