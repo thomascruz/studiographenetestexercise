@@ -1,0 +1,52 @@
+@use '../variables' as var;
+
+#collaborate-section {
+  overflow: hidden;
+  padding:  var.$page-y-padding var.$page-x-padding;
+
+  background-color: var.$color-pink;
+  font-family: 'DIN Condensed';
+  color: var.$color-default;
+
+  & > .wrapper {
+    overflow: auto;
+
+    padding: var.$section-y-padding var.$section-x-padding 0;
+  }
+
+  .decor-plus:before {
+    top: 10px - var.$page-y-padding;
+    left: 57%;
+  }
+
+  .left-wrapper {
+    float: left;
+  }
+
+  .right-wrapper {
+    float: right;
+    padding-top: 35px;
+  }
+
+  .footer-upper {
+    overflow: auto;
+    margin-bottom: 30px;
+  }
+
+  .crossed-title .crossed:after {
+    background-color: var.$color-white;
+  }
+
+  p {
+    width: 325px;
+
+    font-family: "Gill Sans";
+    font-size: 15px;
+    color: var.$color-gray;
+  }
+
+  form {
+    width: 630px;
+  }
+
+}

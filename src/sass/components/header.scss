@@ -1,0 +1,51 @@
+@use '../variables' as var;
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+
+  padding: var.$page-y-padding 0;
+
+  font-family: 'DIN Condensed';
+  color: var.$color-default;
+
+  & > .wrapper {
+    margin: 0 var.$page-x-padding;
+  }
+
+  .header-element {
+    display: inline-block;
+    float: left;
+  }
+
+  .logo h2 {
+    margin: 0 var.$link-margin-right 0 0;
+
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .nav {
+    padding-top: 7px;
+
+    &-right {
+      float: right;
+    }
+
+    .link {
+      margin-right: var.$link-margin-right;
+
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var.$color-default;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+}

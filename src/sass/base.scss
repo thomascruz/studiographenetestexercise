@@ -1,0 +1,145 @@
+@forward 'vendors/normalize';
+
+@use 'variables' as var;
+
+@use 'views/landing';
+
+@use 'components/forms';
+@use 'components/decorations';
+
+@use 'components/header';
+@use 'components/footer';
+@use 'components/section';
+@use 'components/banner-section';
+@use 'components/community-section';
+@use 'components/location-section';
+@use 'components/collaborate-section';
+@use 'components/section-steps';
+
+@font-face {
+  font-family: 'DIN Condensed';
+  src: url('assets/fonts/DIN Condensed Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Gill Sans';
+  src: url('assets/fonts/gill-sans.otf');
+}
+
+body {
+  margin: 0;
+}
+
+#page {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.crossed-title {
+  position: relative;
+  margin: 0 25px;
+
+  font-size: 35px;
+  text-transform: uppercase;
+  z-index: 1;
+
+  .crossed {
+    position: relative;
+
+    font-size: 62px;
+    line-height: 1;
+
+    &:after {
+      content: '';
+
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+
+      width: calc(100% + 50px);
+      height: 9px;
+    }
+
+  }
+}
+
+// BUTTONS
+
+.btn {
+  min-height: 30px;
+  padding: 7px 15px 3px;
+
+  font-size: 18px;
+  background-color: transparent;
+  border: solid 1px var.$color-default;
+  border-radius: 0;
+
+  text-transform: uppercase;
+
+  &.btn-pink {
+    background-color: var.$color-pink;
+    color: var.$color-default;
+    border: none;
+  }
+}
+
+// ICONS
+
+.icon {
+  position: relative;
+  margin-left: 18px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -18px;
+
+    height: 13px;
+    width: 13px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &.like-icon:before {
+    background-image: url('assets/like-icon.svg');
+  }
+
+  &.comment-icon:before {
+    background-image: url('assets/comment-icon.svg');
+  }
+}
+
+// FLEXBOX
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &.flex-end {
+    align-items: flex-end;
+  }
+}
+
+.item {
+  margin-bottom: 20px;
+
+  &.item-1-4 {
+    width: 24%;
+  }
+
+  &.item-3-12 {
+    width: 35%;
+  }
+
+  &.item-1-6 {
+    width: 14%;
+  }
+}

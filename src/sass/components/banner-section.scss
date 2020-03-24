@@ -1,0 +1,73 @@
+@use '../variables' as var;
+
+#banner-section {
+  height: 100vh;
+  min-height: 768px;
+  overflow-y: hidden;
+
+  background-color: #FFDAC9;
+  background-image: url('assets/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 90%;
+
+  font-family: 'DIN Condensed';
+
+  #gourmet-exp-badge {
+    position: absolute;
+      top: 18%;
+      left: 18%;
+      transform: rotate(-30deg);
+
+    #circle-text {
+
+      .circle-letter {
+        position: absolute;
+        height: 80px;
+        transform-origin: bottom center;
+
+        font-size: 18px;
+      }
+
+    }
+
+    #text-inside {
+      position: absolute;
+      top: 80px;
+      transform: translate(-50%, -40%);
+
+      margin: 0;
+
+      font-size: 48px;
+      text-transform: uppercase;
+    }
+
+  }
+
+  .center-title {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+
+    text-transform: uppercase;
+    color: var.$color-white;
+    line-height: 1;
+
+    .title {
+      margin: 0;
+      font-size: 82px;
+
+      .large {
+        font-size: 115px;
+      }
+    }
+
+    .sub-title {
+      margin: 0;
+
+      font-size: 35px;
+      text-align: center;
+    }
+  }
+}

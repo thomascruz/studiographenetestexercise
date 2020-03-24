@@ -1,0 +1,78 @@
+@use '../variables' as var;
+
+footer {
+  overflow: auto;
+
+  padding: var.$page-y-padding 0 + var.$section-x-padding;
+
+  background-color: var.$color-default;
+  font-family: 'DIN Condensed';
+  color: var.$color-default;
+
+  & > .wrapper {
+    margin: 0 var.$page-x-padding;
+  }
+
+  .left-wrapper {
+    float: left;
+  }
+
+  .right-wrapper {
+    float: right;
+  }
+
+  .footer-upper {
+    overflow: auto;
+    margin-bottom: 30px;
+  }
+
+  nav {
+
+    .nav-section {
+      display: inline-block;
+      width: 115px;
+
+      .nav-section-title,
+      .nav-section-links a {
+        margin-bottom: 15px;
+      }
+
+      .nav-section-title {
+        font-size: 14px;
+        color: var.$color-pink;
+        text-transform: uppercase;
+      }
+
+      .nav-section-links a {
+        display: block;
+
+        font-family: "Gill Sans";
+        font-size: 13px;
+        color: var.$color-gray;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  .footer-logo {
+    font-size: 35px;
+    color: var.$color-white;
+    text-align: right;
+    text-transform: uppercase;
+
+    span {
+      font-size: 62px;
+    }
+  }
+
+  .legal {
+    font-family: "Gill Sans";
+    color: var.$color-gray;
+    font-size: 13px;
+  }
+
+  .social-img {
+    width: 230px;
+  }
+}

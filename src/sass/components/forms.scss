@@ -1,0 +1,86 @@
+@use '../variables' as var;
+
+form {
+
+  .form-row {
+    display: flex;
+    flex-wrap: nowrap;
+
+    margin-bottom: 30px;
+
+    &.right {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .form-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    margin-left: 30px;
+  }
+
+  label,
+  input,
+  select,
+  .select-wrapper {
+    display: block;
+    width: 100%;
+  }
+
+
+  label {
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  input,
+  select {
+    padding: 7px 0;
+
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px var.$color-default;
+    border-radius: 0;
+
+    font-family: "Gill Sans";
+    font-size: 15px;
+  }
+
+  .select-wrapper {
+    display: inline-block;
+
+    > select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      color: var.$color-gray;
+
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+
+      top: 70%;
+      right: 0;
+      transform: translateY(-50%);
+
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 4px 0 4px;
+      border-color: var.$color-default transparent transparent transparent;
+    }
+  }
+
+  .btn-submit {
+    background-color: var.$color-default;
+    color: var.$color-pink;
+  }
+
+}
