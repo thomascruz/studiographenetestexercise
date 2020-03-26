@@ -1,6 +1,13 @@
 <template>
-  <section id="location-section">
+  <section class="landing-section" id="location-section">
     <div class="wrapper">
+
+      <div id="location-title">
+        <h2 class="title">Location</h2>
+        <div class="box">
+          <p>12 Upper St. Martin’s Lane<br>WC2H 9FB, London</p>
+        </div>
+      </div>
 
       <div id="map" ref="map"></div>
 
@@ -125,7 +132,7 @@ export default {
           ]
         });
 
-        var image = 'https://raw.githubusercontent.com/thomascruz/studiographenetestexercise/master/src/assets/location-icon.svg?token=AAYGNRJNHLKD46M4W3DIEFS6QOMES';
+        var image = 'https://github.com/thomascruz/studiographenetestexercise/blob/master/src/assets/location-icon.png?raw=true';
         var beachMarker = new google.maps.Marker({
           position: {lat: 51.5124319, lng: -0.1290983},
           map: this.map,

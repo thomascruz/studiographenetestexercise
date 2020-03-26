@@ -1,5 +1,5 @@
 <template>
-  <section id="banner-section">
+  <section class="landing-section" id="banner-section">
     <div class="wrapper">
 
       <div id="gourmet-exp-badge">

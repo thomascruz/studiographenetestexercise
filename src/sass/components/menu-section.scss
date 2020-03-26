@@ -1,0 +1,43 @@
+@use '../variables' as var;
+
+#menu-section {
+  overflow: hidden;
+
+  min-height: 895px;
+  padding:  var.$page-y-padding var.$page-x-padding;
+
+  background-color: var.$color-offwhite;
+  font-family: 'DIN Condensed';
+  color: var.$color-default;
+
+  & > .wrapper {
+    overflow: auto;
+
+    padding: var.$section-y-padding var.$section-x-padding 0;
+  }
+
+  .title {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    .btn {
+      margin-left: calc(50% - 15px);
+      transform: translateX(-50%);
+    }
+  }
+
+  .crossed-title {
+    margin-left: -15px;
+
+    .crossed:after {
+      background-color: var.$color-pink;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1230px) {
+
+}

@@ -1,1 +1,9 @@
+@use '../variables' as var;
 
+html {
+  // scroll-snap-type: y mandatory;
+}
+
+.sections {
+  overflow: hidden;
+}

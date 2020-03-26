@@ -1,5 +1,5 @@
 <template>
-  <section id="collaborate-section">
+  <section class="landing-section" id="collaborate-section">
     <div class="decoration decor-plus"></div>
 
     <div class="wrapper">

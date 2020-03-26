@@ -13,6 +13,7 @@
 @use 'components/banner-section';
 @use 'components/community-section';
 @use 'components/location-section';
+@use 'components/menu-section';
 @use 'components/collaborate-section';
 @use 'components/section-steps';
 
@@ -27,6 +28,8 @@
 }
 
 body {
+  min-width: 1300px;
+
   margin: 0;
 }
 
@@ -39,13 +42,19 @@ body {
   text-decoration: none;
 }
 
+.title {
+  font-size: 62px;
+  text-transform: uppercase;
+}
+
 .crossed-title {
   position: relative;
   margin: 0 25px;
 
+  z-index: 1;
+
   font-size: 35px;
   text-transform: uppercase;
-  z-index: 1;
 
   .crossed {
     position: relative;
@@ -142,4 +151,36 @@ body {
   &.item-1-6 {
     width: 14%;
   }
+}
+
+@media only screen and (min-width: 1201px) {
+
+  .item {
+    margin-bottom: 20px;
+
+    &.item-l-1-4 {
+      width: 24%;
+    }
+
+    &.item-l-3-12 {
+      width: 35%;
+    }
+
+    &.item-l-1-6 {
+      width: 14%;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .item {
+
+    &.item-m-1-2 {
+      width: 49%;
+    }
+
+  }
+
 }

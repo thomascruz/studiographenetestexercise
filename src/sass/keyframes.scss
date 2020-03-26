@@ -1,16 +1,52 @@
-@-webkit-keyframes NAME-YOUR-ANIMATION {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+@-webkit-keyframes card-enter-scene {
+  0%   {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-@-moz-keyframes NAME-YOUR-ANIMATION {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+@-moz-keyframes card-enter-scene {
+  0%   {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-@-o-keyframes NAME-YOUR-ANIMATION {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+@-o-keyframes card-enter-scene {
+  0%   {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-@keyframes NAME-YOUR-ANIMATION {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+@keyframes card-enter-scene {
+  0%   {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -9,7 +9,32 @@
 
 
   & > .wrapper {
-    // padding: var.$section-y-padding var.$section-x-padding;
+    position: relative;
+  }
+
+  #location-title {
+    position: absolute;
+    z-index: 10000;
+
+    padding: var.$section-y-padding var.$section-x-padding + var.$section-x-padding;
+
+    .title {
+      margin: 0 0 0 25px;
+
+      color: var.$color-default;
+    }
+
+    .box {
+      margin-top: -40px;
+      padding: 30px 30px 20px;
+
+      background-color: var.$color-white;
+
+      p {
+        font-family: "Gill Sans";
+        color: var.$color-default;
+      }
+    }
   }
 
   #map {

@@ -1,17 +1,17 @@
 <template>
-  <section id="community-section">
+  <section class="landing-section" id="community-section">
     <div class="wrapper flex flex-end">
 
-      <div class="item item-1-4 item-filler"></div>
+      <div class="item item-l-1-4 item-m-1-2 item-filler"></div>
 
-      <div class="item item-1-4">
+      <div class="item item-l-1-4 item-m-1-2">
         <h2 class="crossed-title"><span class="crossed">Meet our<br>Community</span></h2>
         <button class="btn btn-pink" type="button">Know more</button>
 
         <h3 class="subtitle">LOREM IPSUM DOLOR SIT AMET ERNUT TEMPARTERO SERTU PER NABORE EN TORNA ENTALTO</h3>
       </div>
 
-      <div class="item item-1-4 community-card insta-card">
+      <div class="item item-l-1-4 item-m-1-2 animated-card-1 community-card insta-card">
         <div id="decor-1" class="decoration decor-plus"></div>
 
         <div class="wrapper">
@@ -22,7 +22,7 @@
         </div>
       </div>
 
-      <div class="item item-1-4 community-card text-card">
+      <div class="item item-l-1-4 item-m-1-2 animated-card-1 community-card text-card">
         <div id="decor-2" class="decoration decor-stripes"></div>
 
         <div class="wrapper">
@@ -39,7 +39,7 @@
         </div>
       </div>
 
-      <div class="item item-1-4 community-card text-card">
+      <div class="item item-l-1-4 item-m-1-2 animated-card-2 community-card text-card">
         <div id="decor-3" class="decoration decor-dots"></div>
 
         <div class="wrapper">
@@ -56,7 +56,7 @@
         </div>
       </div>
 
-      <div class="item item-1-4 community-card insta-card">
+      <div class="item item-l-1-4 item-m-1-2 animated-card-2 community-card insta-card">
         <div class="wrapper">
           <div class="insta-badge">
             <img src="../assets/insta-badge.svg">
@@ -65,23 +65,23 @@
         </div>
       </div>
 
-      <div class="item item-1-4 card">
+      <div class="item item-l-1-4 item-m-1-2 animated-card-2 card">
         <div class="wrapper">
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure.</p>
         </div>
       </div>
 
-      <div class="item item-1-4 item-filler"></div>
+      <div class="item item-l-1-4 item-m-1-2 item-filler"></div>
 
-      <div class="item item-1-4 card">
+      <div class="item item-l-1-4 item-m-1-2 animated-card-3 card">
         <div class="wrapper">
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure.</p>
         </div>
       </div>
 
-      <div class="item item-1-4 item-filler"></div>
+      <div class="item item-l-1-4 item-m-1-2 item-filler"></div>
 
-      <div class="item item-1-4 community-card text-card">
+      <div class="item item-l-1-4 item-m-1-2 animated-card-3 community-card text-card">
         <div class="wrapper">
           <h4 class="card-title">@buzzfeedfood</h4>
           <p class="card-text">Getting into long weekend mode like 🍤 #pancitpalabok (📷 @jeepneynyc)</p>
@@ -96,7 +96,7 @@
         </div>
       </div>
 
-      <div class="item item-1-4 community-card insta-card">
+      <div class="item item-l-1-4 item-m-1-2 animated-card-3 community-card insta-card">
         <div class="wrapper">
           <div class="insta-badge">
             <img src="../assets/insta-badge.svg">
