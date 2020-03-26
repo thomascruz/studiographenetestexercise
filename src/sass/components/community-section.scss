@@ -153,10 +153,10 @@
 
 .card-enter-scene {
   animation-name: card-enter-scene;
-   animation-duration: .6s;
-   animation-direction: normal;
-   animation-timing-function: ease-out;
-   animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
 @media only screen and (min-width: 1101px) and (max-width: 1200px) {

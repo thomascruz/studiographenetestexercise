@@ -29,6 +29,7 @@ import SectionSteps from '@/components/SectionSteps.vue'
 
 import Footer from '@/components/Footer.vue'
 
+import $ from 'jquery';
 import ScrollMagic from 'scrollmagic';
 
 export default {
@@ -130,6 +131,63 @@ export default {
           .addTo(controller);
 
     // MENU ANIMATION
+
+    // new ScrollMagic.Scene({
+    //         triggerElement: "#menu-section",
+    //         triggerHook: 0.7
+    //       })
+    //       .setClassToggle(".menu-odd .wrapper", "animate-in")
+    //       .addTo(controller);
+    //
+    // new ScrollMagic.Scene({
+    //         triggerElement: "#menu-section",
+    //         triggerHook: 0.7
+    //       })
+    //       .setClassToggle(".menu-even .wrapper", "animate-in")
+    //       .addTo(controller);
+    //
+    // new ScrollMagic.Scene({
+    //         triggerElement: "#menu-section",
+    //         triggerHook: 0.1
+    //       })
+    //       .setClassToggle(".menu-odd .wrapper", "animate-out")
+    //       .addTo(controller);
+    //
+    // new ScrollMagic.Scene({
+    //         triggerElement: "#menu-section",
+    //         triggerHook: 0.1
+    //       })
+    //       .setClassToggle(".menu-even .wrapper", "animate-out")
+    //       .addTo(controller);
+
+    new ScrollMagic.Scene({
+            triggerElement: "#menu-section",
+            triggerHook: 0.9,
+            duration: "110%"
+          })
+          .on("enter", function (event) {
+            var elEven = $(".menu-even .wrapper"),
+                elOdd = $(".menu-odd .wrapper");
+
+            elEven.addClass('animate-in');
+            elOdd.addClass('animate-in');
+
+            elEven.removeClass('animate-out');
+            elOdd.removeClass('animate-out');
+          })
+          .on("leave", function (event) {
+            var elEven = $(".menu-even .wrapper"),
+                elOdd = $(".menu-odd .wrapper");
+
+
+            elEven.addClass('animate-out');
+            elOdd.addClass('animate-out');
+
+            elEven.removeClass('animate-in');
+            elOdd.removeClass('animate-in');
+          })
+          .addTo(controller);
+
   }
 }
 </script>

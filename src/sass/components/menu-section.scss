@@ -3,8 +3,8 @@
 #menu-section {
   overflow: hidden;
 
-  min-height: 895px;
-  padding:  var.$page-y-padding var.$page-x-padding;
+  height: 895px;
+  padding:  0 var.$page-x-padding;
 
   background-color: var.$color-offwhite;
   font-family: 'DIN Condensed';
@@ -13,10 +13,11 @@
   & > .wrapper {
     overflow: auto;
 
-    padding: var.$section-y-padding var.$section-x-padding 0;
+    height: 100%;
+    padding: 0 var.$section-x-padding 0;
   }
 
-  .title {
+  .section-title {
     position: absolute;
 
     left: 50%;
@@ -33,6 +34,124 @@
 
     .crossed:after {
       background-color: var.$color-pink;
+    }
+  }
+
+  .menu-sections {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .menu-section {
+    overflow: hidden;
+    height: 100%;
+    width: 24%;
+
+    border-right: solid 1px var.$color-light-gray;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    .title {
+      transform: translateX(-10px);
+
+      margin: 0 0 30px;
+    }
+
+    .menu-option {
+      margin: 0 60px 50px 50px;
+    }
+
+    .menu-option-title,
+    .menu-option-description {
+      font-size: 15px;
+      margin: 0 0 15px;
+    }
+
+    .menu-option-title {
+      text-transform: uppercase;
+    }
+
+    .menu-option-description {
+      font-family: "Gill Sans";
+      color: var.$color-gray;
+    }
+
+  }
+
+  .menu-odd {
+
+    & .wrapper {
+      // transform: translateY(150%);
+
+      &.animate-in {
+        animation-name: menu-section-odd-in;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+      }
+
+      &.animate-out {
+        animation-name: menu-section-odd-out;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+      }
+
+    }
+
+  }
+
+  .menu-even {
+
+    & .wrapper {
+      // transform: translateY(- 150%);
+
+      &.animate-in {
+        animation-name: menu-section-even-in;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+      }
+
+      &.animate-out {
+        animation-name: menu-section-even-out;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+      }
+
+    }
+
+  }
+
+  #menu-section-1 {
+    > .wrapper {
+      padding-top: 170px;
+    }
+  }
+
+  #menu-section-2 {
+    > .wrapper {
+      padding-top: 320px;
+    }
+  }
+
+  #menu-section-3 {
+    > .wrapper {
+      padding-top: 270px;
+    }
+  }
+
+  #menu-section-4 {
+    > .wrapper {
+      padding-top: 220px;
     }
   }
 

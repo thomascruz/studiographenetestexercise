@@ -86,15 +86,20 @@ body {
 
   font-size: 18px;
   background-color: transparent;
-  border: solid 1px var.$color-default;
+  border: solid 2px var.$color-default;
   border-radius: 0;
 
+  color: var.$color-default;
   text-transform: uppercase;
 
   &.btn-pink {
     background-color: var.$color-pink;
     color: var.$color-default;
     border: none;
+  }
+
+  &.btn-pink-border {
+    border: solid 2px var.$color-pink;
   }
 }
 
