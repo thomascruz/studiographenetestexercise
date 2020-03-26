@@ -7,6 +7,7 @@ NodeJS
 ```
 npm install -g @vue/cli
 
+cd PROJECT_FOLDER
 npm install
 ```
 
