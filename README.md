@@ -1,5 +1,8 @@
 # studiographenetestexercise
 
+## Requirements
+NodeJS
+
 ## Project setup
 ```
 npm install
