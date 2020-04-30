@@ -10,7 +10,7 @@
     "core-js": "^3.6.4",
     "easy-scroll": "^0.6.0",
     "google-maps-api-loader": "^1.1.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "postscribe": "^2.0.8",
     "scrollmagic": "^2.0.7",
     "vue": "^2.6.11",
